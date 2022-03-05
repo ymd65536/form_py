@@ -30,6 +30,5 @@ if __name__ == '__main__':
   html_text = html_text + f'<input type="text" name="test" value="Hello,World">'
   html_text = html_text + f'<input type="hidden" name="test2" value="sample">'
 
-  html_text = requests.get("https://qiita.com/login").text
   form_data = form_to_dict(html_text)
   print(form_data)
